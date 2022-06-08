@@ -41,8 +41,7 @@ public class Main {
                 if ((num1 <= 0 || num1 > 11) || (num2 <= 0 || num2 > 11)) {
                     throw new Exception("Введите числа от I до X.");
                 }
-                int a = num1 - num2;
-                if (a <= 0) throw new Exception("В римской системе нет отрицательных чисел.");
+                if (num1-num2<= 0 && operation=='-') throw new Exception("В римской системе нет отрицательных чисел.");
                 String result = calc(num1, num2, operation);
                 String resultRom = convertNumToRoman(result);
                 System.out.println(number1 + " " + operation + " " + number2 + " = " + resultRom);
