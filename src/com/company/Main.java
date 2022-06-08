@@ -27,7 +27,7 @@ public class Main {
 
             if (isNumeric(number1)) {
                 if ((Integer.parseInt(number1) <= 0 || Integer.parseInt(number1) > 11) || (Integer.parseInt(number2) <= 0 || Integer.parseInt(number2) > 11)) {
-                    throw new Exception("Введите числа от 0 до 10.");
+                    throw new Exception("Введите числа от 1 до 10.");
                 }
 
                 int num12 = Integer.parseInt(number1);
