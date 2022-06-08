@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         int num1;
         int num2;
-
+        while (true){
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите выражение, состоящее только из арабских или только из римских цифр через пробел и нажмите Enter");
         String userInput = sc.nextLine();
@@ -53,6 +53,7 @@ public class Main {
         } catch (IndexOutOfBoundsException e){
             throw new Exception("Введенная строка не является математической операцией, либо Вы забыли про пробелы.");
         }
+    }
     }
     public static boolean isNumeric(String str)
     {
